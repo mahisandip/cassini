@@ -1,4 +1,4 @@
-package java.codesignal;
+package my.works.codesignal;
 
 public class DiagonalDiffrence {
 
