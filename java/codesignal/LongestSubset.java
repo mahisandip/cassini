@@ -1,4 +1,4 @@
-package my.works.codesignal;
+package java.codesignal;
 
 import java.util.HashSet;
 
