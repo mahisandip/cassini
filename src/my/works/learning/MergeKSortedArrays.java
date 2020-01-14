@@ -3,7 +3,7 @@ package my.works.learning;
 import java.util.PriorityQueue;
 
 /**
- * Merge two sorted arrays
+ * Merge k sorted arrays
  * 
  * eg: 
  * a = [2,6,9]
