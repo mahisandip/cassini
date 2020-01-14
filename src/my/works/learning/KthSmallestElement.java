@@ -1,7 +1,6 @@
 package my.works.learning;
 
 import java.util.Collections;
-import java.util.Iterator;
 import java.util.PriorityQueue;
 
 /**
@@ -11,18 +10,16 @@ import java.util.PriorityQueue;
  * arr : [5, 2, 7, 1, 10, 15, 8]
  * k = 3
  * 
- * Output = [1, 2, 5]
+ * Output = 5
  *
  */
-public class KSmallerElements {
+public class KthSmallestElement {
 	
-	public static int[] findKSmallerElements(int[] arr, int k) {
+	public static int kthSmallestElement(int arr[], int k) {
 		
-
 		if(k > arr.length || k < 1)
 			throw new IllegalArgumentException("Invalid value for k");
 		
-		int[] res = new int[k];
 		PriorityQueue<Integer> pq = new PriorityQueue<>(Collections.reverseOrder());
 		for(int i=0; i<k; i++) 
 			pq.add(arr[i]);
@@ -34,11 +31,7 @@ public class KSmallerElements {
 			}
 		}
 		
-		Iterator<Integer> itr = pq.iterator();
-		for(int j=0; itr.hasNext(); j++)
-			res[j] = itr.next();
-		
-		return res;
+		return pq.peek();
 	}
 
 }
