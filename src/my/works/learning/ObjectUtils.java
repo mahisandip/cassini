@@ -6,6 +6,7 @@ import java.util.Map;
 
 public class ObjectUtils {
 	
+	@SuppressWarnings("rawtypes")
 	public static boolean isEmpty(Object obj) {
 		if (obj == null) {
 			return true;

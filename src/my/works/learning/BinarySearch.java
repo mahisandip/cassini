@@ -3,17 +3,22 @@ package my.works.learning;
 public class BinarySearch {
 
 	public static int binarySearch(int[] a, int key) {
-
 		int low = 0;
 		int high = a.length - 1;
 		return binarySearch(a, key, low, high);
 	}
 
+	/**
+	 * 
+	 * implementation from Arrays.binarySearch
+	 */
 	public static int binarySearch(int[] a, int key, int from, int to) {
 
 		while (from <= to) {
 			int mid = (from + to) >> 1;
+			@SuppressWarnings("rawtypes")
 			Comparable midVal = (Comparable) a[mid];
+			@SuppressWarnings("unchecked")
 			int compare = midVal.compareTo(key);
 			
 			if (compare<0)
@@ -33,7 +38,7 @@ public class BinarySearch {
 		return recursiveBinarySearch(a, key, low, high);
 	}
 
-	public static int recursiveBinarySearch(int arr[],int key, int l, int r) {
+	public static int recursiveBinarySearch(int arr[], int key, int l, int r) {
         if (r >= l) {
             int mid = l + (r - l) / 2;
 
