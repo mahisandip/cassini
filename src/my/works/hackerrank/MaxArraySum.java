@@ -15,6 +15,7 @@ package my.works.hackerrank;
 	[1, -4]     -3
 	[1, 5]       6
 	[3, 5]       8
+	[]			 0
  *
  *
  *@author sandeep.b.nair
