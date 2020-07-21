@@ -1,0 +1,2 @@
+cd ../parking_lot/
+mvn clean install
