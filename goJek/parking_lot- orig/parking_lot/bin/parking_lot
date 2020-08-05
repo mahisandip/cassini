@@ -1,2 +1,0 @@
-cd ../parking_lot/lib
-java -classpath .;parking_lot-1.0-SNAPSHOT.jar com.gojek.solution.Main
